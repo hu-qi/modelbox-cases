@@ -1,0 +1,8 @@
+# IDE product files
+.idea
+*.iml
+*.ipr
+*.iws
+*.bin
+*.exe
+*.pyc

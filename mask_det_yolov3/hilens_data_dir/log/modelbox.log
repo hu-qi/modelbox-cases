@@ -1,0 +1,487 @@
+[2022-07-15 06:01:19,753][ INFO][          main.cc:374 ] modelbox config path : /home/rock/Documents/ModelBox_SDK/workspace/mask_det_yolov3/bin/../graph/modelbox.conf
+[2022-07-15 06:01:19,753][ INFO][        server.cc:110 ] plugin list:
+[2022-07-15 06:01:19,753][ INFO][        server.cc:112 ]  /home/rock/Documents/ModelBox_SDK/workspace/mask_det_yolov3/bin/../../../modelbox-rk-aarch64/lib/modelbox-iva-plugin.so
+[2022-07-15 06:01:19,753][ INFO][        server.cc:112 ]  /home/rock/Documents/ModelBox_SDK/workspace/mask_det_yolov3/bin/../../../modelbox-rk-aarch64/lib/modelbox-stack-plugin.so
+[2022-07-15 06:01:19,847][ INFO][    iva_plugin.cc:11  ] IvaPlugin create success.
+[2022-07-15 06:01:19,847][ INFO][    iva_plugin.cc:16  ] IvaPlugin Init . 
+[2022-07-15 06:01:19,847][ INFO][   iva_manager.cc:151 ] IvaManager::Init: Init begin . 
+[2022-07-15 06:01:19,847][ INFO][    iva_config.cc:225 ] load env config success
+[2022-07-15 06:01:19,847][ INFO][    iva_config.cc:269 ] domain set username default
+[2022-07-15 06:01:19,847][ INFO][    iva_config.cc:272 ] load deploy config success
+[2022-07-15 06:01:19,847][ WARN][    iva_config.cc:143 ] update vas url failed. Fault, no vas projectid or iva endpoint
+[2022-07-15 06:01:19,847][ INFO][    iva_config.cc:146 ] load config success
+[2022-07-15 06:01:19,847][ INFO][   iva_manager.cc:168 ] grap path : /home/rock/Documents/ModelBox_SDK/workspace/mask_det_yolov3/bin/../graph/mask_det_yolov3.toml
+[2022-07-15 06:01:19,847][ INFO][    iva_cipher.cc:432 ] scc_path: 
+[2022-07-15 06:01:19,847][ INFO][    iva_cipher.cc:451 ] IvaCipherManager init success: hilens scene
+[2022-07-15 06:01:19,847][ WARN][         timer.cc:208 ] Schedule timer failed, timer is not running.
+[2022-07-15 06:01:19,847][ERROR][iva_auth_info_updater.cc:29  ] IvaManager::SetIAMAuthInfo Not enough meassage. userId and (domain_id or vas_x_role_name) is empty.
+[2022-07-15 06:01:19,847][ INFO][iva_auth_info_updater.cc:63  ] IvaManager::SetIAMAuthInfo Not enough meassage. ak is empty.
+[2022-07-15 06:01:19,848][ INFO][mock_communicate.cc:394 ] MockCommunicate Init . 
+[2022-07-15 06:01:19,848][ INFO][mock_communicate.cc:445 ] mock communicate init success.
+[2022-07-15 06:01:19,848][ INFO][   iva_manager.cc:53  ] toml does not contain encrytion prefix
+[2022-07-15 06:01:19,866][ INFO][        driver.cc:558 ] Gather scan info success, drivers count 46
+[2022-07-15 06:01:19,871][ INFO][        driver.cc:357 ] load success drivers: count 46, show detail in debug level
+[2022-07-15 06:01:19,871][ WARN][        driver.cc:367 ] load failed drivers: count 1, detail:
+[2022-07-15 06:01:19,871][ WARN][        driver.cc:370 ] /home/rock/Documents/ModelBox_SDK/workspace/mask_det_yolov3/bin/../../../modelbox-rk-aarch64/flowunit/libmodelbox-unit-cpu-data_source_parser-vcn_source.so.1.0.0 : dlopen failed, libjsoncpp.so.0: cannot open shared object file: No such file or directory
+[2022-07-15 06:01:19,872][ INFO][        driver.cc:750 ] begin scan virtual drivers
+[2022-07-15 06:01:19,892][ INFO][virtualdriver_inference.cc:79  ] Add virtual driver /home/rock/Documents/ModelBox_SDK/workspace/mask_det_yolov3/bin/../model/mask_infer/mask_infer.toml success
+[2022-07-15 06:01:19,895][ERROR][virtualdriver_inference.cc:107 ] the config does not have 'type'.
+[2022-07-15 06:01:19,895][ERROR][virtualdriver_inference.cc:86  ] add file: /home/rock/Documents/ModelBox_SDK/workspace/mask_det_yolov3/bin/../model/mask_infer/yolov3_resnet18_mask_det_288x512.toml failed, Bad config, the config does not have 'type'.
+[2022-07-15 06:01:19,905][ INFO][virtualdriver_python.cc:78  ] Add virtual driver /home/rock/Documents/ModelBox_SDK/workspace/mask_det_yolov3/bin/../etc/flowunit/draw_mask_bbox/draw_mask_bbox.toml success
+[2022-07-15 06:01:19,913][ INFO][virtualdriver_python.cc:78  ] Add virtual driver /home/rock/Documents/ModelBox_SDK/workspace/mask_det_yolov3/bin/../etc/flowunit/yolov3_post/yolov3_post.toml success
+[2022-07-15 06:01:19,921][ERROR][virtualdriver_python.cc:106 ] the config does not have 'type'.
+[2022-07-15 06:01:19,921][ERROR][virtualdriver_python.cc:85  ] add file: /home/rock/Documents/ModelBox_SDK/workspace/mask_det_yolov3/bin/../model/mask_infer/yolov3_resnet18_mask_det_288x512.toml failed, Bad config, the config does not have 'type'.
+[2022-07-15 06:01:19,947][ERROR][virtualdriver_yolobox.cc:100 ] config /home/rock/Documents/ModelBox_SDK/workspace/mask_det_yolov3/bin/../model/mask_infer/yolov3_resnet18_mask_det_288x512.toml the config does not have 'type'.
+[2022-07-15 06:01:19,947][ERROR][virtualdriver_yolobox.cc:80  ] add file: /home/rock/Documents/ModelBox_SDK/workspace/mask_det_yolov3/bin/../model/mask_infer/yolov3_resnet18_mask_det_288x512.toml failed, Bad config, config /home/rock/Documents/ModelBox_SDK/workspace/mask_det_yolov3/bin/../model/mask_infer/yolov3_resnet18_mask_det_288x512.toml the config does not have 'type'.
+[2022-07-15 06:01:19,949][ INFO][        driver.cc:752 ] end scan virtual drivers
+[2022-07-15 06:01:19,952][ INFO][ graph_manager.cc:304 ] graph.format : graphviz
+[2022-07-15 06:01:19,962][ INFO][  device_rknpu.cc:105 ] use rknpu2 for inference.
+[2022-07-15 06:01:20,717][ WARN][      flowunit.cc:111 ] generic is not match, you can use a-z, A-Z, 1-9, _ and uppercase the first character.
+[2022-07-15 06:01:20,717][ WARN][virtualdriver_python.cc:360 ] check group type failed , your group_type is generic, the right group_type is a or a/b , for instance input or input/http.
+[2022-07-15 06:01:20,727][ WARN][      flowunit.cc:111 ] generic is not match, you can use a-z, A-Z, 1-9, _ and uppercase the first character.
+[2022-07-15 06:01:20,727][ WARN][virtualdriver_python.cc:360 ] check group type failed , your group_type is generic, the right group_type is a or a/b , for instance input or input/http.
+[2022-07-15 06:01:20,734][ INFO][   communicate.cc:19  ] register callback. msgTytpe:IVA_CREATE_TYPE
+[2022-07-15 06:01:20,735][ INFO][   communicate.cc:19  ] register callback. msgTytpe:IVA_DELETE_TYPE
+[2022-07-15 06:01:20,735][ INFO][   communicate.cc:19  ] register callback. msgTytpe:IVA_QUERY_TYPE
+[2022-07-15 06:01:20,735][ INFO][   communicate.cc:19  ] register callback. msgTytpe:IVA_DELETE_ALL_TYPE
+[2022-07-15 06:01:20,736][ INFO][iva_task_manager.cc:430 ] max_task_num_ 0
+[2022-07-15 06:01:20,736][ INFO][iva_task_manager.cc:434 ] change max_task_num_ to 16
+[2022-07-15 06:01:20,736][ INFO][   iva_manager.cc:184 ] IvaManager::Init: Init end . 
+[2022-07-15 06:01:20,736][ INFO][    iva_plugin.cc:25  ] IvaPlugin init success.
+[2022-07-15 06:01:20,739][ INFO][  stack_plugin.cc:71  ] StackPlugin Init . 
+[2022-07-15 06:01:20,740][ INFO][        server.cc:59  ] app server start
+[2022-07-15 06:01:20,740][ INFO][    iva_plugin.cc:30  ] IvaPlugin Start . 
+[2022-07-15 06:01:20,740][ INFO][   iva_manager.cc:189 ] IvaManager::Start: Start begin . 
+[2022-07-15 06:01:20,742][ INFO][         graph.cc:121 ] Build graph name:mask_det_yolov3, id:3327bc2a-425a-4080-9749-3fd5a9ca9f5e
+[2022-07-15 06:01:20,743][ INFO][ graph_manager.cc:217 ] node name : data_source_parser
+[2022-07-15 06:01:20,743][ INFO][ graph_manager.cc:222 ] input port : in_data
+[2022-07-15 06:01:20,743][ INFO][ graph_manager.cc:228 ] output port : out_video_url
+[2022-07-15 06:01:20,743][ INFO][ graph_manager.cc:217 ] node name : draw_mask_bbox
+[2022-07-15 06:01:20,743][ INFO][ graph_manager.cc:222 ] input port : in_bbox
+[2022-07-15 06:01:20,743][ INFO][ graph_manager.cc:222 ] input port : in_image
+[2022-07-15 06:01:20,743][ INFO][ graph_manager.cc:228 ] output port : out_image
+[2022-07-15 06:01:20,743][ INFO][ graph_manager.cc:217 ] node name : image_resize
+[2022-07-15 06:01:20,743][ INFO][ graph_manager.cc:222 ] input port : in_image
+[2022-07-15 06:01:20,743][ INFO][ graph_manager.cc:228 ] output port : out_image
+[2022-07-15 06:01:20,744][ INFO][ graph_manager.cc:217 ] node name : input1
+[2022-07-15 06:01:20,744][ INFO][ graph_manager.cc:217 ] node name : mask_detection
+[2022-07-15 06:01:20,744][ INFO][ graph_manager.cc:222 ] input port : data
+[2022-07-15 06:01:20,744][ INFO][ graph_manager.cc:228 ] output port : yolo/output1
+[2022-07-15 06:01:20,744][ INFO][ graph_manager.cc:228 ] output port : yolo/output2
+[2022-07-15 06:01:20,744][ INFO][ graph_manager.cc:228 ] output port : yolo/output3
+[2022-07-15 06:01:20,744][ INFO][ graph_manager.cc:217 ] node name : video_decoder
+[2022-07-15 06:01:20,744][ INFO][ graph_manager.cc:222 ] input port : in_video_packet
+[2022-07-15 06:01:20,744][ INFO][ graph_manager.cc:228 ] output port : out_video_frame
+[2022-07-15 06:01:20,744][ INFO][ graph_manager.cc:217 ] node name : video_demuxer
+[2022-07-15 06:01:20,744][ INFO][ graph_manager.cc:222 ] input port : in_video_url
+[2022-07-15 06:01:20,744][ INFO][ graph_manager.cc:228 ] output port : out_video_packet
+[2022-07-15 06:01:20,745][ INFO][ graph_manager.cc:217 ] node name : video_out
+[2022-07-15 06:01:20,745][ INFO][ graph_manager.cc:222 ] input port : in_video_frame
+[2022-07-15 06:01:20,745][ INFO][ graph_manager.cc:217 ] node name : yolov3_post
+[2022-07-15 06:01:20,745][ INFO][ graph_manager.cc:222 ] input port : in_feat1
+[2022-07-15 06:01:20,745][ INFO][ graph_manager.cc:222 ] input port : in_feat2
+[2022-07-15 06:01:20,745][ INFO][ graph_manager.cc:222 ] input port : in_feat3
+[2022-07-15 06:01:20,745][ INFO][ graph_manager.cc:228 ] output port : out_data
+[2022-07-15 06:01:20,745][ INFO][         graph.cc:690 ] begin build node data_source_parser
+[2022-07-15 06:01:20,747][ INFO][         graph.cc:697 ] build node data_source_parser success
+[2022-07-15 06:01:20,748][ INFO][         graph.cc:690 ] begin build node draw_mask_bbox
+[2022-07-15 06:01:20,754][ WARN][      flowunit.cc:111 ] generic is not match, you can use a-z, A-Z, 1-9, _ and uppercase the first character.
+[2022-07-15 06:01:20,755][ WARN][virtualdriver_python.cc:360 ] check group type failed , your group_type is generic, the right group_type is a or a/b , for instance input or input/http.
+[2022-07-15 06:01:20,756][ INFO][         graph.cc:697 ] build node draw_mask_bbox success
+[2022-07-15 06:01:20,756][ INFO][         graph.cc:690 ] begin build node image_resize
+[2022-07-15 06:01:20,758][ INFO][         graph.cc:697 ] build node image_resize success
+[2022-07-15 06:01:20,758][ INFO][         graph.cc:690 ] begin build node input1
+[2022-07-15 06:01:20,759][ INFO][         graph.cc:697 ] build node input1 success
+[2022-07-15 06:01:20,760][ INFO][         graph.cc:690 ] begin build node mask_detection
+[2022-07-15 06:01:20,766][ WARN][flowunit_group.cc:277 ] node input port: Input is not connected
+[2022-07-15 06:01:20,767][ WARN][flowunit_group.cc:293 ] config input port [ data ] not defined in flowunit
+[2022-07-15 06:01:20,767][ WARN][flowunit_group.cc:323 ] flowunit mask_infer port check failed.
+[2022-07-15 06:01:20,767][ERROR][         graph.cc:693 ] code: Bad config, errmsg: flowunit 'mask_infer' config error, port not connect correctly.
+[2022-07-15 06:01:20,768][ERROR][          flow.cc:435 ] build graph failed, Bad config, build graph from config fail. -> build node failed. name: 'mask_detection' -> flowunit 'mask_infer' config error, port not connect correctly.
+[2022-07-15 06:01:20,768][ERROR][   iva_manager.cc:192 ] IvaManager::Start: modelbox_job Build failed, ret: code: Bad config, errmsg: build graph from config fail.
+[2022-07-15 06:01:20,769][ERROR][    iva_plugin.cc:33  ] IvaPlugin start failed
+[2022-07-15 06:01:20,769][ERROR][        server.cc:70  ] Plugin, start failed, /home/rock/Documents/ModelBox_SDK/workspace/mask_det_yolov3/bin/../../../modelbox-rk-aarch64/lib/modelbox-iva-plugin.so
+[2022-07-15 06:01:20,769][ERROR][          main.cc:191 ] server start failed !
+[2022-07-15 06:07:21,902][ INFO][          main.cc:374 ] modelbox config path : /home/rock/Documents/ModelBox_SDK/workspace/mask_det_yolov3/bin/../graph/modelbox.conf
+[2022-07-15 06:07:21,902][ INFO][        server.cc:110 ] plugin list:
+[2022-07-15 06:07:21,902][ INFO][        server.cc:112 ]  /home/rock/Documents/ModelBox_SDK/workspace/mask_det_yolov3/bin/../../../modelbox-rk-aarch64/lib/modelbox-iva-plugin.so
+[2022-07-15 06:07:21,902][ INFO][        server.cc:112 ]  /home/rock/Documents/ModelBox_SDK/workspace/mask_det_yolov3/bin/../../../modelbox-rk-aarch64/lib/modelbox-stack-plugin.so
+[2022-07-15 06:07:22,007][ INFO][    iva_plugin.cc:11  ] IvaPlugin create success.
+[2022-07-15 06:07:22,007][ INFO][    iva_plugin.cc:16  ] IvaPlugin Init . 
+[2022-07-15 06:07:22,007][ INFO][   iva_manager.cc:151 ] IvaManager::Init: Init begin . 
+[2022-07-15 06:07:22,008][ INFO][    iva_config.cc:225 ] load env config success
+[2022-07-15 06:07:22,008][ INFO][    iva_config.cc:269 ] domain set username default
+[2022-07-15 06:07:22,008][ INFO][    iva_config.cc:272 ] load deploy config success
+[2022-07-15 06:07:22,008][ WARN][    iva_config.cc:143 ] update vas url failed. Fault, no vas projectid or iva endpoint
+[2022-07-15 06:07:22,008][ INFO][    iva_config.cc:146 ] load config success
+[2022-07-15 06:07:22,008][ INFO][   iva_manager.cc:168 ] grap path : /home/rock/Documents/ModelBox_SDK/workspace/mask_det_yolov3/bin/../graph/mask_det_yolov3.toml
+[2022-07-15 06:07:22,008][ INFO][    iva_cipher.cc:432 ] scc_path: 
+[2022-07-15 06:07:22,008][ INFO][    iva_cipher.cc:451 ] IvaCipherManager init success: hilens scene
+[2022-07-15 06:07:22,008][ WARN][         timer.cc:208 ] Schedule timer failed, timer is not running.
+[2022-07-15 06:07:22,008][ERROR][iva_auth_info_updater.cc:29  ] IvaManager::SetIAMAuthInfo Not enough meassage. userId and (domain_id or vas_x_role_name) is empty.
+[2022-07-15 06:07:22,008][ INFO][iva_auth_info_updater.cc:63  ] IvaManager::SetIAMAuthInfo Not enough meassage. ak is empty.
+[2022-07-15 06:07:22,008][ INFO][mock_communicate.cc:394 ] MockCommunicate Init . 
+[2022-07-15 06:07:22,009][ INFO][mock_communicate.cc:445 ] mock communicate init success.
+[2022-07-15 06:07:22,009][ INFO][   iva_manager.cc:53  ] toml does not contain encrytion prefix
+[2022-07-15 06:07:22,029][ INFO][        driver.cc:558 ] Gather scan info success, drivers count 46
+[2022-07-15 06:07:22,033][ INFO][        driver.cc:357 ] load success drivers: count 46, show detail in debug level
+[2022-07-15 06:07:22,034][ WARN][        driver.cc:367 ] load failed drivers: count 1, detail:
+[2022-07-15 06:07:22,034][ WARN][        driver.cc:370 ] /home/rock/Documents/ModelBox_SDK/workspace/mask_det_yolov3/bin/../../../modelbox-rk-aarch64/flowunit/libmodelbox-unit-cpu-data_source_parser-vcn_source.so.1.0.0 : dlopen failed, libjsoncpp.so.0: cannot open shared object file: No such file or directory
+[2022-07-15 06:07:22,034][ INFO][        driver.cc:750 ] begin scan virtual drivers
+[2022-07-15 06:07:22,055][ INFO][virtualdriver_inference.cc:79  ] Add virtual driver /home/rock/Documents/ModelBox_SDK/workspace/mask_det_yolov3/bin/../model/mask_infer/mask_infer.toml success
+[2022-07-15 06:07:22,058][ERROR][virtualdriver_inference.cc:107 ] the config does not have 'type'.
+[2022-07-15 06:07:22,058][ERROR][virtualdriver_inference.cc:86  ] add file: /home/rock/Documents/ModelBox_SDK/workspace/mask_det_yolov3/bin/../model/mask_infer/yolov3_resnet18_mask_det_288x512.toml failed, Bad config, the config does not have 'type'.
+[2022-07-15 06:07:22,067][ INFO][virtualdriver_python.cc:78  ] Add virtual driver /home/rock/Documents/ModelBox_SDK/workspace/mask_det_yolov3/bin/../etc/flowunit/draw_mask_bbox/draw_mask_bbox.toml success
+[2022-07-15 06:07:22,074][ INFO][virtualdriver_python.cc:78  ] Add virtual driver /home/rock/Documents/ModelBox_SDK/workspace/mask_det_yolov3/bin/../etc/flowunit/yolov3_post/yolov3_post.toml success
+[2022-07-15 06:07:22,082][ERROR][virtualdriver_python.cc:106 ] the config does not have 'type'.
+[2022-07-15 06:07:22,082][ERROR][virtualdriver_python.cc:85  ] add file: /home/rock/Documents/ModelBox_SDK/workspace/mask_det_yolov3/bin/../model/mask_infer/yolov3_resnet18_mask_det_288x512.toml failed, Bad config, the config does not have 'type'.
+[2022-07-15 06:07:22,106][ERROR][virtualdriver_yolobox.cc:100 ] config /home/rock/Documents/ModelBox_SDK/workspace/mask_det_yolov3/bin/../model/mask_infer/yolov3_resnet18_mask_det_288x512.toml the config does not have 'type'.
+[2022-07-15 06:07:22,106][ERROR][virtualdriver_yolobox.cc:80  ] add file: /home/rock/Documents/ModelBox_SDK/workspace/mask_det_yolov3/bin/../model/mask_infer/yolov3_resnet18_mask_det_288x512.toml failed, Bad config, config /home/rock/Documents/ModelBox_SDK/workspace/mask_det_yolov3/bin/../model/mask_infer/yolov3_resnet18_mask_det_288x512.toml the config does not have 'type'.
+[2022-07-15 06:07:22,108][ INFO][        driver.cc:752 ] end scan virtual drivers
+[2022-07-15 06:07:22,111][ INFO][ graph_manager.cc:304 ] graph.format : graphviz
+[2022-07-15 06:07:22,121][ INFO][  device_rknpu.cc:105 ] use rknpu2 for inference.
+[2022-07-15 06:07:22,838][ WARN][      flowunit.cc:111 ] generic is not match, you can use a-z, A-Z, 1-9, _ and uppercase the first character.
+[2022-07-15 06:07:22,838][ WARN][virtualdriver_python.cc:360 ] check group type failed , your group_type is generic, the right group_type is a or a/b , for instance input or input/http.
+[2022-07-15 06:07:22,847][ WARN][      flowunit.cc:111 ] generic is not match, you can use a-z, A-Z, 1-9, _ and uppercase the first character.
+[2022-07-15 06:07:22,847][ WARN][virtualdriver_python.cc:360 ] check group type failed , your group_type is generic, the right group_type is a or a/b , for instance input or input/http.
+[2022-07-15 06:07:22,854][ INFO][   communicate.cc:19  ] register callback. msgTytpe:IVA_CREATE_TYPE
+[2022-07-15 06:07:22,854][ INFO][   communicate.cc:19  ] register callback. msgTytpe:IVA_DELETE_TYPE
+[2022-07-15 06:07:22,854][ INFO][   communicate.cc:19  ] register callback. msgTytpe:IVA_QUERY_TYPE
+[2022-07-15 06:07:22,855][ INFO][   communicate.cc:19  ] register callback. msgTytpe:IVA_DELETE_ALL_TYPE
+[2022-07-15 06:07:22,855][ INFO][iva_task_manager.cc:430 ] max_task_num_ 0
+[2022-07-15 06:07:22,855][ INFO][iva_task_manager.cc:434 ] change max_task_num_ to 16
+[2022-07-15 06:07:22,855][ INFO][   iva_manager.cc:184 ] IvaManager::Init: Init end . 
+[2022-07-15 06:07:22,855][ INFO][    iva_plugin.cc:25  ] IvaPlugin init success.
+[2022-07-15 06:07:22,858][ INFO][  stack_plugin.cc:71  ] StackPlugin Init . 
+[2022-07-15 06:07:22,858][ INFO][        server.cc:59  ] app server start
+[2022-07-15 06:07:22,858][ INFO][    iva_plugin.cc:30  ] IvaPlugin Start . 
+[2022-07-15 06:07:22,858][ INFO][   iva_manager.cc:189 ] IvaManager::Start: Start begin . 
+[2022-07-15 06:07:22,860][ INFO][         graph.cc:121 ] Build graph name:mask_det_yolov3, id:39e39c00-68d6-45bf-956f-27684072144c
+[2022-07-15 06:07:22,860][ INFO][ graph_manager.cc:217 ] node name : data_source_parser
+[2022-07-15 06:07:22,860][ INFO][ graph_manager.cc:222 ] input port : in_data
+[2022-07-15 06:07:22,860][ INFO][ graph_manager.cc:228 ] output port : out_video_url
+[2022-07-15 06:07:22,860][ INFO][ graph_manager.cc:217 ] node name : draw_mask_bbox
+[2022-07-15 06:07:22,860][ INFO][ graph_manager.cc:222 ] input port : in_bbox
+[2022-07-15 06:07:22,860][ INFO][ graph_manager.cc:222 ] input port : in_image
+[2022-07-15 06:07:22,860][ INFO][ graph_manager.cc:228 ] output port : out_image
+[2022-07-15 06:07:22,860][ INFO][ graph_manager.cc:217 ] node name : image_resize
+[2022-07-15 06:07:22,860][ INFO][ graph_manager.cc:222 ] input port : in_image
+[2022-07-15 06:07:22,860][ INFO][ graph_manager.cc:228 ] output port : out_image
+[2022-07-15 06:07:22,860][ INFO][ graph_manager.cc:217 ] node name : input1
+[2022-07-15 06:07:22,860][ INFO][ graph_manager.cc:217 ] node name : mask_detection
+[2022-07-15 06:07:22,860][ INFO][ graph_manager.cc:222 ] input port : data
+[2022-07-15 06:07:22,860][ INFO][ graph_manager.cc:228 ] output port : yolo/output1
+[2022-07-15 06:07:22,860][ INFO][ graph_manager.cc:228 ] output port : yolo/output2
+[2022-07-15 06:07:22,860][ INFO][ graph_manager.cc:228 ] output port : yolo/output3
+[2022-07-15 06:07:22,860][ INFO][ graph_manager.cc:217 ] node name : video_decoder
+[2022-07-15 06:07:22,860][ INFO][ graph_manager.cc:222 ] input port : in_video_packet
+[2022-07-15 06:07:22,860][ INFO][ graph_manager.cc:228 ] output port : out_video_frame
+[2022-07-15 06:07:22,860][ INFO][ graph_manager.cc:217 ] node name : video_demuxer
+[2022-07-15 06:07:22,860][ INFO][ graph_manager.cc:222 ] input port : in_video_url
+[2022-07-15 06:07:22,860][ INFO][ graph_manager.cc:228 ] output port : out_video_packet
+[2022-07-15 06:07:22,860][ INFO][ graph_manager.cc:217 ] node name : video_out
+[2022-07-15 06:07:22,860][ INFO][ graph_manager.cc:222 ] input port : in_video_frame
+[2022-07-15 06:07:22,860][ INFO][ graph_manager.cc:217 ] node name : yolov3_post
+[2022-07-15 06:07:22,860][ INFO][ graph_manager.cc:222 ] input port : in_feat1
+[2022-07-15 06:07:22,860][ INFO][ graph_manager.cc:222 ] input port : in_feat2
+[2022-07-15 06:07:22,860][ INFO][ graph_manager.cc:222 ] input port : in_feat3
+[2022-07-15 06:07:22,860][ INFO][ graph_manager.cc:228 ] output port : out_data
+[2022-07-15 06:07:22,860][ INFO][         graph.cc:690 ] begin build node data_source_parser
+[2022-07-15 06:07:22,863][ INFO][         graph.cc:697 ] build node data_source_parser success
+[2022-07-15 06:07:22,863][ INFO][         graph.cc:690 ] begin build node draw_mask_bbox
+[2022-07-15 06:07:22,872][ WARN][      flowunit.cc:111 ] generic is not match, you can use a-z, A-Z, 1-9, _ and uppercase the first character.
+[2022-07-15 06:07:22,872][ WARN][virtualdriver_python.cc:360 ] check group type failed , your group_type is generic, the right group_type is a or a/b , for instance input or input/http.
+[2022-07-15 06:07:22,873][ INFO][         graph.cc:697 ] build node draw_mask_bbox success
+[2022-07-15 06:07:22,873][ INFO][         graph.cc:690 ] begin build node image_resize
+[2022-07-15 06:07:22,875][ INFO][         graph.cc:697 ] build node image_resize success
+[2022-07-15 06:07:22,875][ INFO][         graph.cc:690 ] begin build node input1
+[2022-07-15 06:07:22,875][ INFO][         graph.cc:697 ] build node input1 success
+[2022-07-15 06:07:22,875][ INFO][         graph.cc:690 ] begin build node mask_detection
+[2022-07-15 06:07:22,882][ WARN][flowunit_group.cc:277 ] node input port: Input is not connected
+[2022-07-15 06:07:22,882][ WARN][flowunit_group.cc:293 ] config input port [ data ] not defined in flowunit
+[2022-07-15 06:07:22,882][ WARN][flowunit_group.cc:323 ] flowunit mask_infer port check failed.
+[2022-07-15 06:07:22,882][ERROR][         graph.cc:693 ] code: Bad config, errmsg: flowunit 'mask_infer' config error, port not connect correctly.
+[2022-07-15 06:07:22,882][ERROR][          flow.cc:435 ] build graph failed, Bad config, build graph from config fail. -> build node failed. name: 'mask_detection' -> flowunit 'mask_infer' config error, port not connect correctly.
+[2022-07-15 06:07:22,882][ERROR][   iva_manager.cc:192 ] IvaManager::Start: modelbox_job Build failed, ret: code: Bad config, errmsg: build graph from config fail.
+[2022-07-15 06:07:22,882][ERROR][    iva_plugin.cc:33  ] IvaPlugin start failed
+[2022-07-15 06:07:22,882][ERROR][        server.cc:70  ] Plugin, start failed, /home/rock/Documents/ModelBox_SDK/workspace/mask_det_yolov3/bin/../../../modelbox-rk-aarch64/lib/modelbox-iva-plugin.so
+[2022-07-15 06:07:22,882][ERROR][          main.cc:191 ] server start failed !
+[2022-07-15 06:11:06,848][ INFO][          main.cc:374 ] modelbox config path : /home/rock/Documents/ModelBox_SDK/workspace/mask_det_yolov3/bin/../graph/modelbox.conf
+[2022-07-15 06:11:06,848][ INFO][        server.cc:110 ] plugin list:
+[2022-07-15 06:11:06,848][ INFO][        server.cc:112 ]  /home/rock/Documents/ModelBox_SDK/workspace/mask_det_yolov3/bin/../../../modelbox-rk-aarch64/lib/modelbox-iva-plugin.so
+[2022-07-15 06:11:06,848][ INFO][        server.cc:112 ]  /home/rock/Documents/ModelBox_SDK/workspace/mask_det_yolov3/bin/../../../modelbox-rk-aarch64/lib/modelbox-stack-plugin.so
+[2022-07-15 06:11:06,939][ INFO][    iva_plugin.cc:11  ] IvaPlugin create success.
+[2022-07-15 06:11:06,939][ INFO][    iva_plugin.cc:16  ] IvaPlugin Init . 
+[2022-07-15 06:11:06,939][ INFO][   iva_manager.cc:151 ] IvaManager::Init: Init begin . 
+[2022-07-15 06:11:06,939][ INFO][    iva_config.cc:225 ] load env config success
+[2022-07-15 06:11:06,940][ INFO][    iva_config.cc:269 ] domain set username default
+[2022-07-15 06:11:06,940][ INFO][    iva_config.cc:272 ] load deploy config success
+[2022-07-15 06:11:06,940][ WARN][    iva_config.cc:143 ] update vas url failed. Fault, no vas projectid or iva endpoint
+[2022-07-15 06:11:06,940][ INFO][    iva_config.cc:146 ] load config success
+[2022-07-15 06:11:06,940][ INFO][   iva_manager.cc:168 ] grap path : /home/rock/Documents/ModelBox_SDK/workspace/mask_det_yolov3/bin/../graph/mask_det_yolov3.toml
+[2022-07-15 06:11:06,940][ INFO][    iva_cipher.cc:432 ] scc_path: 
+[2022-07-15 06:11:06,940][ INFO][    iva_cipher.cc:451 ] IvaCipherManager init success: hilens scene
+[2022-07-15 06:11:06,940][ WARN][         timer.cc:208 ] Schedule timer failed, timer is not running.
+[2022-07-15 06:11:06,940][ERROR][iva_auth_info_updater.cc:29  ] IvaManager::SetIAMAuthInfo Not enough meassage. userId and (domain_id or vas_x_role_name) is empty.
+[2022-07-15 06:11:06,940][ INFO][iva_auth_info_updater.cc:63  ] IvaManager::SetIAMAuthInfo Not enough meassage. ak is empty.
+[2022-07-15 06:11:06,940][ INFO][mock_communicate.cc:394 ] MockCommunicate Init . 
+[2022-07-15 06:11:06,940][ INFO][mock_communicate.cc:445 ] mock communicate init success.
+[2022-07-15 06:11:06,941][ INFO][   iva_manager.cc:53  ] toml does not contain encrytion prefix
+[2022-07-15 06:11:06,958][ INFO][        driver.cc:558 ] Gather scan info success, drivers count 46
+[2022-07-15 06:11:06,963][ INFO][        driver.cc:357 ] load success drivers: count 46, show detail in debug level
+[2022-07-15 06:11:06,963][ WARN][        driver.cc:367 ] load failed drivers: count 1, detail:
+[2022-07-15 06:11:06,963][ WARN][        driver.cc:370 ] /home/rock/Documents/ModelBox_SDK/workspace/mask_det_yolov3/bin/../../../modelbox-rk-aarch64/flowunit/libmodelbox-unit-cpu-data_source_parser-vcn_source.so.1.0.0 : dlopen failed, libjsoncpp.so.0: cannot open shared object file: No such file or directory
+[2022-07-15 06:11:06,963][ INFO][        driver.cc:750 ] begin scan virtual drivers
+[2022-07-15 06:11:06,984][ INFO][virtualdriver_inference.cc:79  ] Add virtual driver /home/rock/Documents/ModelBox_SDK/workspace/mask_det_yolov3/bin/../model/mask_infer/mask_infer.toml success
+[2022-07-15 06:11:06,987][ERROR][virtualdriver_inference.cc:107 ] the config does not have 'type'.
+[2022-07-15 06:11:06,987][ERROR][virtualdriver_inference.cc:86  ] add file: /home/rock/Documents/ModelBox_SDK/workspace/mask_det_yolov3/bin/../model/mask_infer/yolov3_resnet18_mask_det_288x512.toml failed, Bad config, the config does not have 'type'.
+[2022-07-15 06:11:06,999][ INFO][virtualdriver_python.cc:78  ] Add virtual driver /home/rock/Documents/ModelBox_SDK/workspace/mask_det_yolov3/bin/../etc/flowunit/draw_mask_bbox/draw_mask_bbox.toml success
+[2022-07-15 06:11:07,007][ INFO][virtualdriver_python.cc:78  ] Add virtual driver /home/rock/Documents/ModelBox_SDK/workspace/mask_det_yolov3/bin/../etc/flowunit/yolov3_post/yolov3_post.toml success
+[2022-07-15 06:11:07,015][ERROR][virtualdriver_python.cc:106 ] the config does not have 'type'.
+[2022-07-15 06:11:07,015][ERROR][virtualdriver_python.cc:85  ] add file: /home/rock/Documents/ModelBox_SDK/workspace/mask_det_yolov3/bin/../model/mask_infer/yolov3_resnet18_mask_det_288x512.toml failed, Bad config, the config does not have 'type'.
+[2022-07-15 06:11:07,042][ERROR][virtualdriver_yolobox.cc:100 ] config /home/rock/Documents/ModelBox_SDK/workspace/mask_det_yolov3/bin/../model/mask_infer/yolov3_resnet18_mask_det_288x512.toml the config does not have 'type'.
+[2022-07-15 06:11:07,042][ERROR][virtualdriver_yolobox.cc:80  ] add file: /home/rock/Documents/ModelBox_SDK/workspace/mask_det_yolov3/bin/../model/mask_infer/yolov3_resnet18_mask_det_288x512.toml failed, Bad config, config /home/rock/Documents/ModelBox_SDK/workspace/mask_det_yolov3/bin/../model/mask_infer/yolov3_resnet18_mask_det_288x512.toml the config does not have 'type'.
+[2022-07-15 06:11:07,045][ INFO][        driver.cc:752 ] end scan virtual drivers
+[2022-07-15 06:11:07,050][ INFO][ graph_manager.cc:304 ] graph.format : graphviz
+[2022-07-15 06:11:07,063][ INFO][  device_rknpu.cc:105 ] use rknpu2 for inference.
+[2022-07-15 06:11:07,895][ WARN][      flowunit.cc:111 ] generic is not match, you can use a-z, A-Z, 1-9, _ and uppercase the first character.
+[2022-07-15 06:11:07,896][ WARN][virtualdriver_python.cc:360 ] check group type failed , your group_type is generic, the right group_type is a or a/b , for instance input or input/http.
+[2022-07-15 06:11:07,905][ WARN][      flowunit.cc:111 ] generic is not match, you can use a-z, A-Z, 1-9, _ and uppercase the first character.
+[2022-07-15 06:11:07,905][ WARN][virtualdriver_python.cc:360 ] check group type failed , your group_type is generic, the right group_type is a or a/b , for instance input or input/http.
+[2022-07-15 06:11:07,912][ INFO][   communicate.cc:19  ] register callback. msgTytpe:IVA_CREATE_TYPE
+[2022-07-15 06:11:07,912][ INFO][   communicate.cc:19  ] register callback. msgTytpe:IVA_DELETE_TYPE
+[2022-07-15 06:11:07,912][ INFO][   communicate.cc:19  ] register callback. msgTytpe:IVA_QUERY_TYPE
+[2022-07-15 06:11:07,912][ INFO][   communicate.cc:19  ] register callback. msgTytpe:IVA_DELETE_ALL_TYPE
+[2022-07-15 06:11:07,912][ INFO][iva_task_manager.cc:430 ] max_task_num_ 0
+[2022-07-15 06:11:07,913][ INFO][iva_task_manager.cc:434 ] change max_task_num_ to 16
+[2022-07-15 06:11:07,913][ INFO][   iva_manager.cc:184 ] IvaManager::Init: Init end . 
+[2022-07-15 06:11:07,913][ INFO][    iva_plugin.cc:25  ] IvaPlugin init success.
+[2022-07-15 06:11:07,916][ INFO][  stack_plugin.cc:71  ] StackPlugin Init . 
+[2022-07-15 06:11:07,916][ INFO][        server.cc:59  ] app server start
+[2022-07-15 06:11:07,916][ INFO][    iva_plugin.cc:30  ] IvaPlugin Start . 
+[2022-07-15 06:11:07,916][ INFO][   iva_manager.cc:189 ] IvaManager::Start: Start begin . 
+[2022-07-15 06:11:07,918][ INFO][         graph.cc:121 ] Build graph name:mask_det_yolov3, id:090cfe2b-c7b0-4f29-9ba1-56339bcf9888
+[2022-07-15 06:11:07,918][ INFO][ graph_manager.cc:217 ] node name : data_source_parser
+[2022-07-15 06:11:07,918][ INFO][ graph_manager.cc:222 ] input port : in_data
+[2022-07-15 06:11:07,918][ INFO][ graph_manager.cc:228 ] output port : out_video_url
+[2022-07-15 06:11:07,918][ INFO][ graph_manager.cc:217 ] node name : draw_mask_bbox
+[2022-07-15 06:11:07,918][ INFO][ graph_manager.cc:222 ] input port : in_bbox
+[2022-07-15 06:11:07,918][ INFO][ graph_manager.cc:222 ] input port : in_image
+[2022-07-15 06:11:07,918][ INFO][ graph_manager.cc:228 ] output port : out_image
+[2022-07-15 06:11:07,918][ INFO][ graph_manager.cc:217 ] node name : image_resize
+[2022-07-15 06:11:07,918][ INFO][ graph_manager.cc:222 ] input port : in_image
+[2022-07-15 06:11:07,918][ INFO][ graph_manager.cc:228 ] output port : out_image
+[2022-07-15 06:11:07,918][ INFO][ graph_manager.cc:217 ] node name : input1
+[2022-07-15 06:11:07,918][ INFO][ graph_manager.cc:217 ] node name : mask_detection
+[2022-07-15 06:11:07,918][ INFO][ graph_manager.cc:222 ] input port : data
+[2022-07-15 06:11:07,918][ INFO][ graph_manager.cc:228 ] output port : yolo/output1
+[2022-07-15 06:11:07,918][ INFO][ graph_manager.cc:228 ] output port : yolo/output2
+[2022-07-15 06:11:07,918][ INFO][ graph_manager.cc:228 ] output port : yolo/output3
+[2022-07-15 06:11:07,920][ INFO][ graph_manager.cc:217 ] node name : video_decoder
+[2022-07-15 06:11:07,920][ INFO][ graph_manager.cc:222 ] input port : in_video_packet
+[2022-07-15 06:11:07,920][ INFO][ graph_manager.cc:228 ] output port : out_video_frame
+[2022-07-15 06:11:07,920][ INFO][ graph_manager.cc:217 ] node name : video_demuxer
+[2022-07-15 06:11:07,920][ INFO][ graph_manager.cc:222 ] input port : in_video_url
+[2022-07-15 06:11:07,920][ INFO][ graph_manager.cc:228 ] output port : out_video_packet
+[2022-07-15 06:11:07,920][ INFO][ graph_manager.cc:217 ] node name : video_out
+[2022-07-15 06:11:07,920][ INFO][ graph_manager.cc:222 ] input port : in_video_frame
+[2022-07-15 06:11:07,920][ INFO][ graph_manager.cc:217 ] node name : yolov3_post
+[2022-07-15 06:11:07,920][ INFO][ graph_manager.cc:222 ] input port : in_feat1
+[2022-07-15 06:11:07,920][ INFO][ graph_manager.cc:222 ] input port : in_feat2
+[2022-07-15 06:11:07,920][ INFO][ graph_manager.cc:222 ] input port : in_feat3
+[2022-07-15 06:11:07,920][ INFO][ graph_manager.cc:228 ] output port : out_data
+[2022-07-15 06:11:07,920][ INFO][         graph.cc:690 ] begin build node data_source_parser
+[2022-07-15 06:11:07,922][ INFO][         graph.cc:697 ] build node data_source_parser success
+[2022-07-15 06:11:07,922][ INFO][         graph.cc:690 ] begin build node draw_mask_bbox
+[2022-07-15 06:11:07,929][ WARN][      flowunit.cc:111 ] generic is not match, you can use a-z, A-Z, 1-9, _ and uppercase the first character.
+[2022-07-15 06:11:07,929][ WARN][virtualdriver_python.cc:360 ] check group type failed , your group_type is generic, the right group_type is a or a/b , for instance input or input/http.
+[2022-07-15 06:11:07,929][ INFO][         graph.cc:697 ] build node draw_mask_bbox success
+[2022-07-15 06:11:07,929][ INFO][         graph.cc:690 ] begin build node image_resize
+[2022-07-15 06:11:07,931][ INFO][         graph.cc:697 ] build node image_resize success
+[2022-07-15 06:11:07,931][ INFO][         graph.cc:690 ] begin build node input1
+[2022-07-15 06:11:07,931][ INFO][         graph.cc:697 ] build node input1 success
+[2022-07-15 06:11:07,931][ INFO][         graph.cc:690 ] begin build node mask_detection
+[2022-07-15 06:11:07,937][ INFO][         graph.cc:697 ] build node mask_detection success
+[2022-07-15 06:11:07,937][ INFO][         graph.cc:690 ] begin build node video_decoder
+[2022-07-15 06:11:07,937][ INFO][         graph.cc:697 ] build node video_decoder success
+[2022-07-15 06:11:07,937][ INFO][         graph.cc:690 ] begin build node video_demuxer
+[2022-07-15 06:11:07,938][ INFO][         graph.cc:697 ] build node video_demuxer success
+[2022-07-15 06:11:07,938][ INFO][         graph.cc:690 ] begin build node video_out
+[2022-07-15 06:11:07,938][ INFO][         graph.cc:697 ] build node video_out success
+[2022-07-15 06:11:07,938][ INFO][         graph.cc:690 ] begin build node yolov3_post
+[2022-07-15 06:11:07,949][ WARN][      flowunit.cc:111 ] generic is not match, you can use a-z, A-Z, 1-9, _ and uppercase the first character.
+[2022-07-15 06:11:07,949][ WARN][virtualdriver_python.cc:360 ] check group type failed , your group_type is generic, the right group_type is a or a/b , for instance input or input/http.
+[2022-07-15 06:11:07,949][ INFO][         graph.cc:697 ] build node yolov3_post success
+[2022-07-15 06:11:07,950][ INFO][         graph.cc:373 ] add link, data_source_parser:out_video_url -> video_demuxer:in_video_url
+[2022-07-15 06:11:07,950][ INFO][         graph.cc:373 ] add link, draw_mask_bbox:out_image -> video_out:in_video_frame
+[2022-07-15 06:11:07,950][ INFO][         graph.cc:373 ] add link, image_resize:out_image -> mask_detection:data
+[2022-07-15 06:11:07,950][ INFO][         graph.cc:373 ] add link, input1:input1 -> data_source_parser:in_data
+[2022-07-15 06:11:07,950][ INFO][         graph.cc:373 ] add link, mask_detection:yolo/output1 -> yolov3_post:in_feat1
+[2022-07-15 06:11:07,950][ INFO][         graph.cc:373 ] add link, mask_detection:yolo/output2 -> yolov3_post:in_feat2
+[2022-07-15 06:11:07,950][ INFO][         graph.cc:373 ] add link, mask_detection:yolo/output3 -> yolov3_post:in_feat3
+[2022-07-15 06:11:07,950][ INFO][         graph.cc:373 ] add link, video_decoder:out_video_frame -> draw_mask_bbox:in_image
+[2022-07-15 06:11:07,950][ INFO][         graph.cc:373 ] add link, video_decoder:out_video_frame -> image_resize:in_image
+[2022-07-15 06:11:07,950][ INFO][         graph.cc:373 ] add link, video_demuxer:out_video_packet -> video_decoder:in_video_packet
+[2022-07-15 06:11:07,951][ INFO][         graph.cc:373 ] add link, yolov3_post:out_data -> draw_mask_bbox:in_bbox
+[2022-07-15 06:11:07,953][ INFO][flowunit_group.cc:418 ] node: image_resize get batch size is 1
+[2022-07-15 06:11:07,957][ INFO][video_decoder_flowunit.cc:24  ] RKNPU video_decoder with bgr
+[2022-07-15 06:11:07,958][ INFO][flowunit_group.cc:418 ] node: video_decoder get batch size is 1
+[2022-07-15 06:11:07,963][ INFO][flowunit_group.cc:418 ] node: video_demuxer get batch size is 1
+[2022-07-15 06:11:07,965][ INFO][flowunit_group.cc:418 ] node: video_out get batch size is 1
+[2022-07-15 06:11:07,984][ INFO][data_source_parser_flowunit.cc:56  ] Add plugin : obs
+[2022-07-15 06:11:07,998][ INFO][data_source_parser_flowunit.cc:56  ] Add plugin : restful
+[2022-07-15 06:11:08,014][ INFO][data_source_parser_flowunit.cc:56  ] Add plugin : url
+[2022-07-15 06:11:08,035][ INFO][data_source_parser_flowunit.cc:56  ] Add plugin : vis
+[2022-07-15 06:11:08,036][ INFO][flowunit_group.cc:418 ] node: data_source_parser get batch size is 1
+[2022-07-15 06:11:08,105][ INFO][flowunit_group.cc:418 ] node: mask_detection get batch size is 1
+[2022-07-15 06:11:09,063][ INFO][flowunit_group.cc:418 ] node: yolov3_post get batch size is 1
+[2022-07-15 06:11:09,321][ INFO][flowunit_group.cc:418 ] node: draw_mask_bbox get batch size is 1
+[2022-07-15 06:11:09,323][ INFO][         graph.cc:930 ] node: data_source_parser #0
+[2022-07-15 06:11:09,323][ INFO][         graph.cc:930 ] node: draw_mask_bbox #0
+[2022-07-15 06:11:09,323][ INFO][         graph.cc:930 ] node: image_resize #0
+[2022-07-15 06:11:09,323][ INFO][         graph.cc:930 ] node: input1 #0
+[2022-07-15 06:11:09,323][ INFO][         graph.cc:930 ] node: mask_detection #0
+[2022-07-15 06:11:09,323][ INFO][         graph.cc:930 ] node: video_decoder #0
+[2022-07-15 06:11:09,323][ INFO][         graph.cc:930 ] node: video_demuxer #0
+[2022-07-15 06:11:09,323][ INFO][         graph.cc:930 ] node: video_out #0
+[2022-07-15 06:11:09,323][ INFO][         graph.cc:930 ] node: yolov3_post #0
+[2022-07-15 06:11:09,323][ INFO][         graph.cc:1135] topo index: 0, input1
+[2022-07-15 06:11:09,323][ INFO][         graph.cc:1135] topo index: 1, data_source_parser
+[2022-07-15 06:11:09,323][ INFO][         graph.cc:1135] topo index: 2, video_demuxer
+[2022-07-15 06:11:09,323][ INFO][         graph.cc:1135] topo index: 3, video_decoder
+[2022-07-15 06:11:09,323][ INFO][         graph.cc:1135] topo index: 4, image_resize
+[2022-07-15 06:11:09,323][ INFO][         graph.cc:1135] topo index: 5, mask_detection
+[2022-07-15 06:11:09,323][ INFO][         graph.cc:1135] topo index: 6, yolov3_post
+[2022-07-15 06:11:09,323][ INFO][         graph.cc:1135] topo index: 7, draw_mask_bbox
+[2022-07-15 06:11:09,323][ INFO][         graph.cc:1135] topo index: 8, video_out
+[2022-07-15 06:11:09,323][ INFO][         graph.cc:951 ] set priority. node: data_source_parser port: in_data priority: 1
+[2022-07-15 06:11:09,323][ INFO][         graph.cc:951 ] set priority. node: video_demuxer port: in_video_url priority: 2
+[2022-07-15 06:11:09,323][ INFO][         graph.cc:951 ] set priority. node: video_decoder port: in_video_packet priority: 3
+[2022-07-15 06:11:09,324][ INFO][         graph.cc:951 ] set priority. node: image_resize port: in_image priority: 4
+[2022-07-15 06:11:09,324][ INFO][         graph.cc:951 ] set priority. node: mask_detection port: data priority: 5
+[2022-07-15 06:11:09,324][ INFO][         graph.cc:951 ] set priority. node: yolov3_post port: in_feat1 priority: 6
+[2022-07-15 06:11:09,324][ INFO][         graph.cc:951 ] set priority. node: yolov3_post port: in_feat2 priority: 6
+[2022-07-15 06:11:09,324][ INFO][         graph.cc:951 ] set priority. node: yolov3_post port: in_feat3 priority: 6
+[2022-07-15 06:11:09,324][ INFO][         graph.cc:951 ] set priority. node: draw_mask_bbox port: in_bbox priority: 7
+[2022-07-15 06:11:09,324][ INFO][         graph.cc:951 ] set priority. node: draw_mask_bbox port: in_image priority: 7
+[2022-07-15 06:11:09,324][ INFO][         graph.cc:951 ] set priority. node: video_out port: in_video_frame priority: 8
+[2022-07-15 06:11:09,324][ INFO][         graph.cc:1156] port connect, input1:input1 -> data_source_parser:in_data
+[2022-07-15 06:11:09,324][ INFO][         graph.cc:1156] port connect, yolov3_post:out_data -> draw_mask_bbox:in_bbox
+[2022-07-15 06:11:09,324][ INFO][         graph.cc:1156] port connect, video_decoder:out_video_frame -> draw_mask_bbox:in_image
+[2022-07-15 06:11:09,324][ INFO][         graph.cc:1156] port connect, video_decoder:out_video_frame -> image_resize:in_image
+[2022-07-15 06:11:09,324][ INFO][         graph.cc:1156] port connect, mask_detection:yolo/output1 -> yolov3_post:in_feat1
+[2022-07-15 06:11:09,324][ INFO][         graph.cc:1156] port connect, draw_mask_bbox:out_image -> video_out:in_video_frame
+[2022-07-15 06:11:09,324][ INFO][         graph.cc:1156] port connect, image_resize:out_image -> mask_detection:data
+[2022-07-15 06:11:09,324][ INFO][         graph.cc:1156] port connect, video_demuxer:out_video_packet -> video_decoder:in_video_packet
+[2022-07-15 06:11:09,324][ INFO][         graph.cc:1156] port connect, data_source_parser:out_video_url -> video_demuxer:in_video_url
+[2022-07-15 06:11:09,324][ INFO][         graph.cc:1156] port connect, mask_detection:yolo/output2 -> yolov3_post:in_feat2
+[2022-07-15 06:11:09,324][ INFO][         graph.cc:1156] port connect, mask_detection:yolo/output3 -> yolov3_post:in_feat3
+[2022-07-15 06:11:09,325][ INFO][ graph_checker.cc:715 ] node: yolov3_post, key: match_node, value: mask_detection
+[2022-07-15 06:11:09,325][ INFO][ graph_checker.cc:715 ] node: draw_mask_bbox, key: match_node, value: video_decoder
+[2022-07-15 06:11:09,325][ INFO][flow_scheduler.cc:69  ] init scheduler with 18 threads, max 576
+[2022-07-15 06:11:09,326][ INFO][mock_communicate.cc:453 ] mock communicate start.
+[2022-07-15 06:11:09,326][ INFO][iva_task_manager.cc:831 ] IvaUpload Start success.
+[2022-07-15 06:11:09,326][ INFO][   iva_manager.cc:210 ] IvaManager::Start: Start end . 
+[2022-07-15 06:11:09,326][ INFO][    iva_plugin.cc:36  ] IvaPlugin Start success.
+[2022-07-15 06:11:09,330][ INFO][  stack_plugin.cc:76  ] StackPlugin Start . 
+[2022-07-15 06:11:09,331][ INFO][mock_communicate.cc:473 ] MockCommunicate::Send msg to mock url: , payload: {"business":"instance","data":{"createAt":"2022-07-15T06:11:09Z","id":"modelbox-instance-mock","resource":{"curRunningNumber":0,"maxRunningNumber":16,"queueNumber":0,"realtimeNumber":0},"state":"RUNNING","tasks":[]}}, try: 10
+[2022-07-15 06:11:10,332][ INFO][mock_communicate.cc:275 ] {"streams":[{"common":{"param_float":10.5,"param_int":10,"param_str":"string param"},"input":{"data":{"url":"/home/rock/Documents/ModelBox_SDK/workspace/mask_det_yolov3/bin/../data/mask_test.mp4"},"type":"url"},"outputs":[{"data":{"headers":{},"url":"/home/rock/Documents/ModelBox_SDK/workspace/mask_det_yolov3/bin/../hilens_data_dir/mask_test_result.mp4"},"type":"webhook"}]}],"taskId":"a48d564d-00f1-4335-9850-bbc514215460"}
+[2022-07-15 06:11:10,333][ INFO][iva_task_manager.cc:33  ] IvaMicroTask::Parse, {"common":{"param_float":10.5,"param_int":10,"param_str":"string param"},"input":{"data":{"url":"/home/rock/Documents/ModelBox_SDK/workspace/mask_det_yolov3/bin/../data/mask_test.mp4"},"type":"url"},"outputs":[{"data":{"headers":{},"url":"/home/rock/Documents/ModelBox_SDK/workspace/mask_det_yolov3/bin/../hilens_data_dir/mask_test_result.mp4"},"type":"webhook"}]}
+[2022-07-15 06:11:10,333][ INFO][        iva_io.cc:646 ] IvaIOFactory::Parse data: {"data":{"url":"/home/rock/Documents/ModelBox_SDK/workspace/mask_det_yolov3/bin/../data/mask_test.mp4"},"type":"url"}
+[2022-07-15 06:11:10,333][ INFO][        iva_io.cc:649 ] IvaIOFactory::Parse data type url
+[2022-07-15 06:11:10,333][ INFO][        iva_io.cc:682 ] Parse, Iva type i/o success isInput:1
+[2022-07-15 06:11:10,333][ INFO][iva_task_manager.cc:49  ] IvaMicroTask::Parse, parse input success finished.
+[2022-07-15 06:11:10,333][ INFO][        iva_io.cc:646 ] IvaIOFactory::Parse data: {"data":{"headers":{},"url":"/home/rock/Documents/ModelBox_SDK/workspace/mask_det_yolov3/bin/../hilens_data_dir/mask_test_result.mp4"},"type":"webhook"}
+[2022-07-15 06:11:10,333][ INFO][        iva_io.cc:649 ] IvaIOFactory::Parse data type webhook
+[2022-07-15 06:11:10,333][ INFO][        iva_io.cc:682 ] Parse, Iva type i/o success isInput:0
+[2022-07-15 06:11:10,333][ INFO][iva_task_manager.cc:62  ] IvaMicroTask::Parse, parse outputs success.
+[2022-07-15 06:11:10,333][ INFO][iva_task_manager.cc:162 ] Parse, stream group success
+[2022-07-15 06:11:10,333][ INFO][iva_task_manager.cc:179 ] Parse, task group success
+[2022-07-15 06:11:10,334][ INFO][session_context.cc:37  ] session context start se id:a9d49593-0958-4eaa-9441-1c9521f39b50
+[2022-07-15 06:11:10,335][ INFO][      iva_task.cc:604 ] IvaTask Run CreateTask . task_name_: a48d564d-00f1-4335-9850-bbc514215460_1657865470 modelbox_task_id: a9d49593-0958-4eaa-9441-1c9521f39b50
+[2022-07-15 06:11:10,335][ INFO][      iva_task.cc:229 ] source_type: url
+[2022-07-15 06:11:10,336][ INFO][      iva_task.cc:230 ] input_cfg: {"url":"/home/rock/Documents/ModelBox_SDK/workspace/mask_det_yolov3/bin/../data/mask_test.mp4","url_type":"file"}
+[2022-07-15 06:11:10,338][ INFO][      iva_task.cc:262 ] output_cfg: {"brokers":[{"cfg":"{\"headers\":null,\"url\":\"/home/rock/Documents/ModelBox_SDK/workspace/mask_det_yolov3/bin/../hilens_data_dir/mask_test_result.mp4\"}","name":"webhook","type":"webhook"}]}
+[2022-07-15 06:11:10,338][ERROR][        iva_io.cc:118 ] tempAuthInfo is nullptr
+[2022-07-15 06:11:10,338][ERROR][        iva_io.cc:118 ] tempAuthInfo is nullptr
+[2022-07-15 06:11:10,339][ INFO][      iva_task.cc:356 ] common:{"param_float":10.5,"param_int":10,"param_str":"string param"}
+[2022-07-15 06:11:10,339][ INFO][      iva_task.cc:357 ] svc_config:{"algorithm":{"multiTask":"no","algType":"mock"},"mockFile":"/home/rock/Documents/ModelBox_SDK/workspace/mask_det_yolov3/bin/mock_task.toml","svcInstanceId":"modelbox-instance-mock"}
+[2022-07-15 06:11:10,340][ INFO][      iva_task.cc:358 ] input:{"auth":null,"data":{"url":"/home/rock/Documents/ModelBox_SDK/workspace/mask_det_yolov3/bin/../data/mask_test.mp4"},"type":"url"}
+[2022-07-15 06:11:10,340][ERROR][        iva_io.cc:118 ] tempAuthInfo is nullptr
+[2022-07-15 06:11:10,341][ INFO][      iva_task.cc:360 ] output:{"auth":null,"data":{"headers":{},"url":"/home/rock/Documents/ModelBox_SDK/workspace/mask_det_yolov3/bin/../hilens_data_dir/mask_test_result.mp4"},"type":"webhook"}
+[2022-07-15 06:11:10,341][ INFO][      iva_task.cc:362 ] task_id:a48d564d-00f1-4335-9850-bbc514215460
+[2022-07-15 06:11:10,341][ INFO][      iva_task.cc:628 ] IvaTask Run success.. task_name_: a48d564d-00f1-4335-9850-bbc514215460_1657865470modelbox_task_id: a9d49593-0958-4eaa-9441-1c9521f39b50
+[2022-07-15 06:11:10,342][ INFO][iva_task_manager.cc:215 ] TaskGroup::CreateIvaTasks , task Run, TaskName: a48d564d-00f1-4335-9850-bbc514215460_1657865470
+[2022-07-15 06:11:10,342][ INFO][iva_task_manager.cc:224 ] CreateIvaTasks complete
+[2022-07-15 06:11:10,342][ INFO][iva_task_manager.cc:574 ] create iva task success. taskid: a48d564d-00f1-4335-9850-bbc514215460
+[2022-07-15 06:11:10,342][ INFO][mock_communicate.cc:380 ] mock task: finish. httpStatus: 201 body:{}
+[2022-07-15 06:11:10,342][ INFO][iva_task_manager.cc:464 ] CreateTaskPostProcess begin
+[2022-07-15 06:11:10,343][ INFO][mock_communicate.cc:473 ] MockCommunicate::Send msg to mock url: , payload: {"business":"task","data":{"createAt":"2022-07-15T06:11:10Z","curRunningNumber":1,"failStreamNumber":0,"id":"a48d564d-00f1-4335-9850-bbc514215460","okStreamNumber":0,"state":"RUNNING","sumStreamNumber":1,"taskUUID":""}}, try: 10
+[2022-07-15 06:11:10,343][ INFO][iva_task_manager.cc:744 ] update task status. {"business":"task","data":{"createAt":"2022-07-15T06:11:10Z","curRunningNumber":1,"failStreamNumber":0,"id":"a48d564d-00f1-4335-9850-bbc514215460","okStreamNumber":0,"state":"RUNNING","sumStreamNumber":1,"taskUUID":""}}
+[2022-07-15 06:11:10,346][ INFO][iva_task_manager.cc:839 ] IvaUpload Update notify.
+[2022-07-15 06:11:10,347][ INFO][mock_communicate.cc:390 ] mock task success. 
+[2022-07-15 06:11:10,349][ INFO][mock_communicate.cc:473 ] MockCommunicate::Send msg to mock url: , payload: {"business":"instance","data":{"createAt":"2022-07-15T06:11:10Z","id":"modelbox-instance-mock","resource":{"curRunningNumber":1,"maxRunningNumber":16,"queueNumber":0,"realtimeNumber":1},"state":"RUNNING","tasks":[{"createAt":"2022-07-15T06:11:10Z","curRunningNumber":1,"failStreamNumber":0,"id":"a48d564d-00f1-4335-9850-bbc514215460","okStreamNumber":0,"state":"RUNNING","sumStreamNumber":1,"taskUUID":""}]}}, try: 10
+[2022-07-15 06:11:10,354][ INFO][  match_stream.cc:512 ] node data_source_parser, port in_data, inherit backward level 0
+[2022-07-15 06:11:10,358][ INFO][data_source_parser_flowunit.cc:94  ] Try parse input config url for a9d49593-0958-4eaa-9441-1c9521f39b50
+[2022-07-15 06:11:10,363][ INFO][data_source_parser_flowunit.cc:111 ] parse input config ok for a9d49593-0958-4eaa-9441-1c9521f39b50
+[2022-07-15 06:11:10,366][ INFO][          node.cc:678 ] node: data_source_parser, sess id: a9d49593-0958-4eaa-9441-1c9521f39b50, data ctx finished
+[2022-07-15 06:11:10,368][ INFO][  match_stream.cc:512 ] node video_demuxer, port in_video_url, inherit backward level 0
+[2022-07-15 06:11:10,369][ INFO][ ffmpeg_reader.cc:113 ] Source url:/home/rock/Documents/ModelBox_SDK/workspace/mask_det_yolov3/bin/../data/mask_test.mp4, reconnect:true, rw_timeout:30s
+[2022-07-15 06:11:10,372][ INFO][ ffmpeg_reader.cc:78  ] Open source /home/rock/Documents/ModelBox_SDK/workspace/mask_det_yolov3/bin/../data/mask_test.mp4 success, format QuickTime / MOV : mov,mp4,m4a,3gp,3g2,mj2
+[2022-07-15 06:11:10,399][ INFO][ffmpeg_video_demuxer.cc:259 ] Stream /home/rock/Documents/ModelBox_SDK/workspace/mask_det_yolov3/bin/../data/mask_test.mp4 creation time is null
+[2022-07-15 06:11:10,399][ INFO][ffmpeg_video_demuxer.cc:277 ] Stream /home/rock/Documents/ModelBox_SDK/workspace/mask_det_yolov3/bin/../data/mask_test.mp4 rotate is null
+[2022-07-15 06:11:10,399][ INFO][ffmpeg_video_demuxer.cc:308 ] extra_data: 1:42:c0:1f:ff:e1:0:d:67:42:c0:1f:da:1:40:16:c8:7:84:2:15:1:0:4:68:ce:3c:80:
+[2022-07-15 06:11:10,399][ INFO][ffmpeg_video_demuxer.cc:329 ] try get bsf for Fourcc:avc1, CodecId:27
+[2022-07-15 06:11:10,399][ INFO][ffmpeg_video_demuxer.cc:69  ] demux info:
+[2022-07-15 06:11:10,399][ INFO][ffmpeg_video_demuxer.cc:70  ] source url: /home/rock/Documents/ModelBox_SDK/workspace/mask_det_yolov3/bin/../data/mask_test.mp4
+[2022-07-15 06:11:10,399][ INFO][ffmpeg_video_demuxer.cc:71  ] key frame only: 0
+[2022-07-15 06:11:10,399][ INFO][ffmpeg_video_demuxer.cc:72  ] codec id: 27
+[2022-07-15 06:11:10,399][ INFO][ffmpeg_video_demuxer.cc:73  ] profile id: 66
+[2022-07-15 06:11:10,399][ INFO][ffmpeg_video_demuxer.cc:74  ] creation time: 0
+[2022-07-15 06:11:10,399][ INFO][ffmpeg_video_demuxer.cc:75  ] time base: 0.0111111
+[2022-07-15 06:11:10,399][ INFO][ffmpeg_video_demuxer.cc:76  ] frame width: 1280
+[2022-07-15 06:11:10,399][ INFO][ffmpeg_video_demuxer.cc:77  ] frame height: 720
+[2022-07-15 06:11:10,399][ INFO][ffmpeg_video_demuxer.cc:78  ] frame rate: 1000/33
+[2022-07-15 06:11:10,399][ INFO][ffmpeg_video_demuxer.cc:80  ] frame rotate: 0
+[2022-07-15 06:11:10,399][ INFO][ffmpeg_video_demuxer.cc:81  ] frame count: 290
+[2022-07-15 06:11:10,399][ INFO][ffmpeg_video_demuxer.cc:82  ] video duration: 9
+[2022-07-15 06:11:10,399][ INFO][ffmpeg_video_demuxer.cc:88  ] bsf_name:h264_mp4toannexb,
+[2022-07-15 06:11:10,401][ INFO][  match_stream.cc:512 ] node video_decoder, port in_video_packet, inherit backward level 0
+[2022-07-15 06:11:10,401][ INFO][video_decoder_flowunit.cc:44  ] Video Decode DataPre
+[2022-07-15 06:11:10,472][ INFO][  match_stream.cc:512 ] node image_resize, port in_image, inherit backward level 0
+[2022-07-15 06:11:10,498][ INFO][  match_stream.cc:512 ] node mask_detection, port data, inherit backward level 0
+[2022-07-15 06:11:10,710][ INFO][  match_stream.cc:512 ] node yolov3_post, port in_feat3, inherit backward level 0
+[2022-07-15 06:11:10,710][ INFO][  match_stream.cc:512 ] node yolov3_post, port in_feat2, inherit backward level 0
+[2022-07-15 06:11:10,710][ INFO][  match_stream.cc:512 ] node yolov3_post, port in_feat1, inherit backward level 0
+[2022-07-15 06:11:10,831][ INFO][  match_stream.cc:512 ] node draw_mask_bbox, port in_image, inherit backward level 0
+[2022-07-15 06:11:10,831][ INFO][  match_stream.cc:512 ] node draw_mask_bbox, port in_bbox, inherit backward level 0
+[2022-07-15 06:11:11,060][ INFO][  match_stream.cc:512 ] node video_out, port in_video_frame, inherit backward level 0
+[2022-07-15 06:11:11,064][ INFO][video_out_flowunit.cc:304 ] video_out url is /home/rock/Documents/ModelBox_SDK/workspace/mask_det_yolov3/bin/../hilens_data_dir/mask_test_result.mp4
+[2022-07-15 06:11:11,111][ INFO][ ffmpeg_writer.cc:55  ] Open url /home/rock/Documents/ModelBox_SDK/workspace/mask_det_yolov3/bin/../hilens_data_dir/mask_test_result.mp4, format mp4 success
+[2022-07-15 06:11:25,912][ INFO][ffmpeg_video_demuxer.cc:147 ] Stream /home/rock/Documents/ModelBox_SDK/workspace/mask_det_yolov3/bin/../data/mask_test.mp4 is end
+[2022-07-15 06:11:25,913][ INFO][          node.cc:678 ] node: video_demuxer, sess id: a9d49593-0958-4eaa-9441-1c9521f39b50, data ctx finished
+[2022-07-15 06:11:26,406][ INFO][          node.cc:678 ] node: video_decoder, sess id: a9d49593-0958-4eaa-9441-1c9521f39b50, data ctx finished
+[2022-07-15 06:11:27,183][ INFO][          node.cc:678 ] node: video_out, sess id: a9d49593-0958-4eaa-9441-1c9521f39b50, data ctx finished
+[2022-07-15 06:11:27,183][ INFO][       session.cc:99  ] session a9d49593-0958-4eaa-9441-1c9521f39b50 is over, running session count 0
+[2022-07-15 06:11:27,183][ INFO][session_context.cc:41  ] session context finish se id:a9d49593-0958-4eaa-9441-1c9521f39b50
+[2022-07-15 06:11:27,184][ INFO][      iva_task.cc:529 ] ModelBoxTaskStatusCallback: Recvie Callback,   task_name_: a48d564d-00f1-4335-9850-bbc514215460_1657865470 modelbox task id: a9d49593-0958-4eaa-9441-1c9521f39b50 status: 5
+[2022-07-15 06:11:27,184][ INFO][mock_communicate.cc:473 ] MockCommunicate::Send msg to mock url: , payload: {"business":"task","data":{"createAt":"2022-07-15T06:11:27Z","curRunningNumber":0,"failStreamNumber":0,"id":"a48d564d-00f1-4335-9850-bbc514215460","okStreamNumber":1,"state":"SUCCEEDED","sumStreamNumber":1,"taskUUID":""}}, try: 10
+[2022-07-15 06:11:27,184][ INFO][mock_communicate.cc:483 ] Task SUCCEEDED, Mock will exit application
+[2022-07-15 06:11:27,184][ INFO][iva_task_manager.cc:744 ] update task status. {"business":"task","data":{"createAt":"2022-07-15T06:11:27Z","curRunningNumber":0,"failStreamNumber":0,"id":"a48d564d-00f1-4335-9850-bbc514215460","okStreamNumber":1,"state":"SUCCEEDED","sumStreamNumber":1,"taskUUID":""}}
+[2022-07-15 06:11:27,185][ INFO][mock_communicate.cc:473 ] MockCommunicate::Send msg to mock url: , payload: {"business":"task","data":{"createAt":"2022-07-15T06:11:27Z","curRunningNumber":0,"failStreamNumber":0,"id":"a48d564d-00f1-4335-9850-bbc514215460","okStreamNumber":1,"state":"SUCCEEDED","sumStreamNumber":1,"taskUUID":""}}, try: 10
+[2022-07-15 06:11:27,185][ INFO][mock_communicate.cc:483 ] Task SUCCEEDED, Mock will exit application
+[2022-07-15 06:11:27,185][ INFO][iva_task_manager.cc:788 ] task finish. a48d564d-00f1-4335-9850-bbc514215460
+[2022-07-15 06:11:27,185][ INFO][iva_task_manager.cc:839 ] IvaUpload Update notify.
+[2022-07-15 06:11:27,185][ INFO][      iva_task.cc:564 ] ModelBoxTaskStatusCallback: Callback Finish,   task_name_: a48d564d-00f1-4335-9850-bbc514215460_1657865470 modelbox task id: a9d49593-0958-4eaa-9441-1c9521f39b50
+[2022-07-15 06:11:27,185][ INFO][mock_communicate.cc:473 ] MockCommunicate::Send msg to mock url: , payload: {"business":"instance","data":{"createAt":"2022-07-15T06:11:27Z","id":"modelbox-instance-mock","resource":{"curRunningNumber":0,"maxRunningNumber":16,"queueNumber":0,"realtimeNumber":0},"state":"RUNNING","tasks":[]}}, try: 10
+[2022-07-15 06:11:27,185][ INFO][        server.cc:91  ] app server stop
+[2022-07-15 06:11:27,186][ INFO][iva_task_manager.cc:825 ] IvaUpload thread Stop.
+[2022-07-15 06:11:27,186][ INFO][iva_task_manager.cc:852 ] IvaUpload Stop notify.
+[2022-07-15 06:11:27,386][ INFO][mock_communicate.cc:466 ] mock communicate stop.
+[2022-07-15 06:11:27,386][ INFO][flow_scheduler.cc:397 ] shutdown flow scheduler.
+[2022-07-15 06:11:27,386][ERROR][flow_scheduler.cc:377 ] the scheduler caught an error : Stop operation
+[2022-07-15 06:11:27,393][ INFO][rknpu2_inference_flowunit.cc:73  ] rknn2 inference close
+[2022-07-15 06:11:27,404][ INFO][   job_manager.cc:82  ] delete job : IVA_JOB
+[2022-07-15 06:11:27,404][ INFO][    iva_plugin.cc:46  ] IvaPlugin Stop success.
+[2022-07-15 06:11:27,404][ INFO][  stack_plugin.cc:85  ] StackPlugin Stop success.
+[2022-07-15 06:11:27,404][ INFO][          main.cc:382 ] exit modelbox process
